@@ -2,6 +2,7 @@
 from dotenv import load_dotenv
 from facebook_scraper import get_posts
 from users import *
+from post import *
 import os
 
 # load env variables
