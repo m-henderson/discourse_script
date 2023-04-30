@@ -21,10 +21,12 @@ options = {"comments": "generator"}
 
 # fields
 user_names = []
-group = os.environ["fb_group"]
-pages = os.environ["pages"]
-cookies = os.environ["cookies"]
-
+#group = os.environ["fb_group"]
+#pages = os.environ["pages"]
+#cookies = os.environ["cookies"]
+group = "1049379701753594"
+pages = 3
+cookies = "./cookies/facebook.com_cookies.txt"
 # type conversions for env var
 pages = int(pages)
 
