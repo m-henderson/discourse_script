@@ -1,6 +1,7 @@
 import requests
 import json
 from database import *
+from datetime import datetime
 
 headers = {
     "Accept": "application/json",
@@ -28,8 +29,12 @@ def create_topic(post_id, body, title, username):
     return res.json()
 
 def build_url(discourse_post):
-    link_to_index = "https://mypwcforum.com/t/" + discourse_post["topic_slug"] + "/" + str(discourse_post["topic_id"])
-    return link_to_index
+    link_to_index = ""
+    try:
+        link_to_index = "https://mypwcforum.com/t/" + discourse_post["topic_slug"] + "/" + str(discourse_post["topic_id"])
+        return link_to_index
+    except:
+       return link_to_index
 
 def create_post_reply(comment_id, body, topic_id, comment_headers):
     data = {
