@@ -19,7 +19,6 @@ def should_process_comment(comment_body):
 def process_comments(user_names, post, posted_by):
     if (post["comments_full"] is None) == False:
         for comment in post['comments_full']:
-            time.sleep(400)
             if len(comment["comment_text"]) > 20:
                 if comment_exist(comment["comment_id"]):
                     print('comment exist...skipping. ' + comment["comment_id"])

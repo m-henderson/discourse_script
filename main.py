@@ -1,5 +1,5 @@
 # imports
-from dotenv import load_dotenv
+
 from facebook_scraper import get_posts
 from users import *
 from comments import *
@@ -14,7 +14,7 @@ from database import *
 create_tables()
 
 # load env variables
-load_dotenv()
+#load_dotenv()
 
 # fb scrape options
 options = {"comments": "generator"}
