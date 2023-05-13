@@ -6,8 +6,8 @@ import time
 
 headers = {
     "Accept": "application/json; charset=utf-8",
-    "Api-Key": "f324078d3655222f780cab5e4c38f5e771c6795c87072aff0db3fe0a38c4e0fa",
-    "Api-Username": "michael",
+    "Api-Key": "",
+    "Api-Username": "",
 }
 params = {
     "headers": headers
