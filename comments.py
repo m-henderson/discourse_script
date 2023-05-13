@@ -28,4 +28,5 @@ def process_comments(user_names, post, posted_by):
                     if (headers["Api-Username"] == posted_by):
                         headers["Api-Username"] = random.choice(user_names)
                     topic_id = get_discourse_post_id(post["post_id"])
-                    create_post_reply(comment_id=comment["comment_id"], body=comment["comment_text"], topic_id=topic_id, comment_headers=headers)
+                    if topic_id:
+                        create_post_reply(comment_id=comment["comment_id"], body=comment["comment_text"], topic_id=topic_id, comment_headers=headers)

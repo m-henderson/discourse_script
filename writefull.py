@@ -1,6 +1,6 @@
 
 import openai
-openai.api_key = "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"
+openai.api_key = "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"
 
 import json
 # what if we get an error on writefull api? how do we check status codes
